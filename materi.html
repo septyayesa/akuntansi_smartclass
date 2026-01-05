@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>AKUNTANSI SMART | Materi & Latihan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVIGASI ================= -->
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="materi.html">Materi</a>
+    <a href="latihan.html">Latihan</a>
+    <a href="kontak.html">Kontak</a>
+	<a href="galeri.html">Galeri Akuntansi<a/>
+</nav>
+
+<!-- ================= JUDUL ================= -->
+<header>
+    <h1>Materi & Latihan Akuntansi Dasar</h1>
+    <p>
+        Halaman ini berisi penjelasan materi akuntansi dasar
+        secara lengkap dan latihan soal interaktif
+        untuk menguji pemahaman pengguna.
+    </p>
+</header>
+
+<!-- ================= MATERI ================= -->
+<section>
+    <h2>📘 Materi Akuntansi Dasar</h2>
+
+    <!-- PENGERTIAN -->
+    <h3>1. Pengertian Akuntansi</h3>
+    <p>
+        Akuntansi adalah suatu proses sistematis yang dilakukan
+        untuk mencatat, mengelompokkan, meringkas, dan menyajikan
+        data keuangan yang berasal dari aktivitas ekonomi suatu usaha.
+    </p>
+    <p>
+        Proses akuntansi dimulai dari pencatatan transaksi keuangan
+        hingga penyusunan laporan keuangan yang dapat digunakan
+        oleh berbagai pihak untuk mengambil keputusan.
+    </p>
+
+    <!-- TUJUAN -->
+    <h3>2. Tujuan Akuntansi</h3>
+    <p>
+        Akuntansi memiliki beberapa tujuan utama, yaitu:
+    </p>
+    <ul>
+        <li>
+            <b>Menyediakan informasi keuangan</b>  
+            untuk mengetahui kondisi keuangan suatu usaha.
+        </li>
+        <li>
+            <b>Membantu pengambilan keputusan</b>  
+            baik oleh pemilik usaha maupun manajemen.
+        </li>
+        <li>
+            <b>Menjadi alat pertanggungjawaban</b>  
+            atas pengelolaan keuangan.
+        </li>
+        <li>
+            <b>Mengetahui laba atau rugi usaha</b>  
+            dalam periode tertentu.
+        </li>
+    </ul>
+
+    <!-- PIHAK -->
+    <h3>3. Pihak yang Membutuhkan Informasi Akuntansi</h3>
+    <p>
+        Informasi yang dihasilkan dari proses akuntansi
+        digunakan oleh berbagai pihak, antara lain:
+    </p>
+    <ul>
+        <li>
+            <b>Pemilik usaha</b> → untuk menilai kinerja usaha.
+        </li>
+        <li>
+            <b>Manajer</b> → untuk mengatur operasional dan perencanaan.
+        </li>
+        <li>
+            <b>Kreditur</b> → untuk menilai kemampuan membayar utang.
+        </li>
+        <li>
+            <b>Pemerintah</b> → untuk keperluan perpajakan.
+        </li>
+    </ul>
+
+    <!-- PERSAMAAN -->
+    <h3>4. Persamaan Dasar Akuntansi</h3>
+    <p>
+        Persamaan dasar akuntansi merupakan konsep utama
+        dalam akuntansi yang menunjukkan hubungan antara
+        harta, kewajiban, dan modal.
+    </p>
+    <p><strong>Aset = Utang + Modal</strong></p>
+
+    <p>
+        Penjelasan setiap unsur:
+    </p>
+    <ul>
+        <li>
+            <b>Aset</b>: semua kekayaan yang dimiliki perusahaan,
+            seperti kas, peralatan, dan gedung.
+        </li>
+        <li>
+            <b>Utang</b>: kewajiban perusahaan kepada pihak lain.
+        </li>
+        <li>
+            <b>Modal</b>: hak pemilik terhadap kekayaan perusahaan.
+        </li>
+    </ul>
+
+    <!-- CONTOH -->
+    <h3>5. Contoh Penerapan Persamaan Akuntansi</h3>
+    <p>
+        Seorang pengusaha memiliki:
+    </p>
+    <ul>
+        <li>Kas sebesar Rp15.000.000</li>
+        <li>Utang sebesar Rp5.000.000</li>
+    </ul>
+    <p>
+        Maka besar modal pemilik dapat dihitung sebagai berikut:
+    </p>
+    <p>
+        <strong>
+            Modal = Aset – Utang  
+            <br>
+            Modal = Rp15.000.000 – Rp5.000.000 = Rp10.000.000
+        </strong>
+    </p>
+    <p>
+        Contoh ini menunjukkan bahwa setiap perubahan
+        pada aset atau utang akan memengaruhi modal.
+    </p>
+</section>
+
+<hr>
+
+<!-- ================= LATIHAN ================= -->
+<section>
+    <h2>✏️ Latihan Interaktif</h2>
+    <p>
+        Pilih jawaban yang paling tepat berdasarkan
+        materi yang telah dipelajari.
+    </p>
+
+    <p><strong>Pertanyaan:</strong></p>
+    <p>
+        1. Mengapa akuntansi penting bagi suatu usaha?
+    </p>
+
+    <button onClick="cekJawaban(true)">
+        Karena menyediakan informasi keuangan
+        untuk pengambilan keputusan
+    </button>
+
+    <button onClick="cekJawaban(false)">
+        Karena hanya digunakan untuk menghitung pajak
+    </button>
+
+    <p id="hasil"></p>
+	<p>2. Apa tujuan utama akuntansi?</p>
+    <button onClick="cekJawaban(this, true)">Menyediakan informasi keuangan</button>
+    <button onClick="cekJawaban(this, false)">Menentukan harga jual</button>
+
+    <p>3. Persamaan dasar akuntansi adalah?</p>
+    <button onClick="cekJawaban(this, true)">Aset = Liabilitas + Ekuitas</button>
+    <button onClick="cekJawaban(this, false)">Aset = Modal − Utang</button>
+	<p>4. Pihak yang membutuhkan informasi akuntansi di dalam perusahaan disebut?</p>
+<button onClick="cekJawaban(this, true)">Pengguna internal</button>
+<button onClick="cekJawaban(this, false)">Pengguna eksternal</button>
+
+<p>5. Laporan keuangan yang menunjukkan posisi harta, utang, dan modal adalah?</p>
+<button onClick="cekJawaban(this, true)">Neraca</button>
+<button onClick="cekJawaban(this, false)">Laporan laba rugi</button>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
